@@ -7,7 +7,7 @@
 
 
 ## 소스코드
-[https://github.com/SGRsoft-Dev/vpe.floating.player.demo](https://github.com/SGRsoft-Dev/vpe.floating.player.demo)
+[https://github.com/SGRsoft-Dev/vpe.nuxt3.router.player.demo](https://github.com/SGRsoft-Dev/vpe.nuxt3.router.player.demo)
 
 
 *** 
@@ -20,7 +20,7 @@
 
 ## 제한사항
 
-현재 데모코드에 사용된 필수 요소들은 개발자 로컬 테스트에서만 동작합니다. (http://localhost:3000)
+현재 데모코드에 사용된 필수 요소들은 개발자 로컬 테스트에서만 동작합니다. (http://localhost:3100)
 
 네이버클라우드 플랫폼 Video Player Enhancement 유료 라이선스가 필요합니다.
 ***
@@ -39,76 +39,31 @@ https://guide.ncloud-docs.com/docs/vpe-web
 ***
 
 
-## NCP Video Player Enhancement SDK 설정
-![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202308/7a602c53cc6a0b69759031e44ad8e5d9.png)
 
-네이버클라우드 콘솔에서 Video Player Enhancement 진입
+## 참고 사이트
+### Nuxt 3 Introduction
 
-***
+https://nuxt.com/docs/getting-started/introduction
 
-![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202308/bc8f9b9850f93396e7e07ca2c1c9cd4d.png)
+### Nuxt 3 UI
 
-플레이어를 신규로 생성합니다.
+https://ui.nuxtlabs.com/getting-started
 
-***
+### Tailwind CSS
+https://tailwindcss.com/docs/installation
 
-![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202308/37fc51c8dccfdf2711ba7500203c685c.png)
-
-서비스를 운영할 도메인을 입력합니다.
-
-***
-
-![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202308/6ad95ea2ed84a4412224a68f17d22c1b.png)
-
-생성된 플레이어의 SDK URL를 복사합니다.
+### Nuxt 3 Tailwind CSS
+https://tailwindcss.nuxtjs.org/
 
 ***
 
 ## 실행방법
 
 ```bash
-$ npm install
-$ npm run dev
+$ yarn install
+$ yarn run dev
 ```
 
-## 코드 보기
-```javascript
-// 플레이어 플로팅 상태 변경
-const setFixed = (scrollY) => {
-    let playerHeight = document.querySelector('#player').offsetHeight;
-    if (scrollY > parseInt(playerHeight)) {
-        document.querySelector('#player').classList.add('floating');
-    }else{
-        document.querySelector('#player').classList.remove('floating');
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    window.player = new ncplayer('player',{
-        playlist:[
-            {
-                file:'https://fsxikvammvwv14470411.cdn.ntruss.com/hls/9N5-iJ4f9tdzE6D708PTmg__/vod/j5IXBfIJ83893893_,1080,720,480,p.mp4.smil/master.m3u8',
-                poster:'https://wnfosehmzhuc12665447.cdn.ntruss.com/thumb/sample_thumb.png?type=m&w=1024&h=760&ttype=jpg',
-                description: {
-                    title: "네이버클라우드 소개 영상",
-                    created_at: "2023.07.13",
-                    profile_name: "네이버클라우드",
-                    profile_image: "https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202208/d127c8db642716d84b3201f1d152e52a.png"
-                },
-            }
-        ],
-        autostart:true,
-    });
-
-    // 플레이어 플로팅 상태 초기화
-    setFixed(window.scrollY);
-
-    window.addEventListener('scroll', () => {
-        setFixed(window.scrollY);
-    })
-});
-
-```
 
 ***
 
