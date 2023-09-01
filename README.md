@@ -4,7 +4,8 @@
 
 ![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202309/43ff750a31628b11492b2f08353a7f2a.gif)
 
-
+## 데모보기
+[https://vpe-nuxt3-router-player-demo.web.app/](https://vpe-nuxt3-router-player-demo.web.app/)
 
 ## 소스코드
 [https://github.com/SGRsoft-Dev/vpe.nuxt3.router.player.demo](https://github.com/SGRsoft-Dev/vpe.nuxt3.router.player.demo)
