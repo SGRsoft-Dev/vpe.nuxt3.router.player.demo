@@ -1,6 +1,6 @@
 ## NAVER CLOUD PLATFORM Video Player Enhancement DEMO
 
-미디어플러스에서 제공하는 NAVERCLOUD VPE Player + Nuxt3를 이용한 미니플레이어 구현 예제
+VIDEO24에서 제공하는 NAVERCLOUD VPE Player + Nuxt3를 이용한 미니플레이어 구현 예제
 
 ![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202309/43ff750a31628b11492b2f08353a7f2a.gif)
 
@@ -82,8 +82,6 @@ SGRSOFT를 통하여 네이버클라우드 플랫폼 크래딧을 지원 받을 
 
 
 미디어플러스 웹사이트 :
-[https://mediaplus.co.kr/](https://mediaplus.co.kr/)
+[https://video24.app/](https://video24.app/)
 
-![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202308/851b6ea05f1fcc1cb827d841ca32346d.png)
-
-
+![](https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202310/4f8b9055fd11fe2a1595586c52a7ec29.png)
